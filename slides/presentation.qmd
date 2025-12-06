@@ -12,6 +12,7 @@ format:
     chalkboard: true
     logo: ""
     footer: "TechTalks Edinburgh #4 | Clockwise Edinburgh Leith"
+    auto-stretch: false  # Prevent conflicts with .scrollable slides
 ---
 
 ## Welcome {.center}
