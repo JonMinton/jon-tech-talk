@@ -1,0 +1,320 @@
+---
+title: "Teaching (Yourself and Others) with Claude"
+subtitle: "Experiments and Reflections"
+author: "Jon Minton"
+date: "December 10, 2024"
+format:
+  revealjs:
+    theme: dark
+    transition: slide
+    background-transition: fade
+    slide-number: true
+    chalkboard: true
+    logo: ""
+    footer: "TechTalks Edinburgh #4 | Clockwise Edinburgh Leith"
+---
+
+## Welcome {.center}
+
+**TechTalks Edinburgh #4**
+
+Clockwise Edinburgh Leith
+December 10, 2024 | 7:30-8:15 PM
+
+---
+
+## About Me {.smaller}
+
+Jon Minton
+Senior Biostatistician
+
+- Eclectic background and interests
+- Former AI skeptic → Current AI enthusiast
+- [GitHub](https://github.com/JonMinton) | [Blog](https://jonminton.github.io/jon-blog/)
+
+---
+
+# Part 1: Understanding AI Reasoning {.center}
+
+From Wire Mother to Cloth Mother
+
+---
+
+## Harlow's Experiment (1950s)
+
+![Harlow's surrogate mothers experiment](../images/blog/harlow-experiment.jpg){width=60%}
+
+Wire Mother: Function without comfort
+Cloth Mother: Comfort without function
+
+---
+
+## The AI Parallel
+
+:::: {.columns}
+::: {.column width="50%"}
+![Demis Hassabis (DeepMind)](../images/blog/demis-hassabis.jpg)
+
+**Wire Mother**
+Function without form
+(AlphaFold, reasoning)
+:::
+
+::: {.column width="50%"}
+![Sam Altman (OpenAI)](../images/blog/sam-altman.jpg)
+
+**Cloth Mother**
+Form without function
+(ChatGPT, conversation)
+:::
+::::
+
+---
+
+## The Convergence
+
+Modern LLMs = **WiredClothMother**
+
+- High reasoning capability
+- Natural conversation
+- Both function AND form
+
+![](../images/blog/hype-and-capability.png){width=70%}
+
+---
+
+# Part 2: How Claude Sessions Work {.center}
+
+Severance and Memory Compartmentalization
+
+---
+
+## Severance: The Metaphor
+
+![](../images/popculture/severance-poster.jpg){width=40%}
+
+Work self vs. Personal self
+Separated memories and contexts
+
+---
+
+## Claude Sessions
+
+Like Severance's "innies":
+
+- Each conversation is isolated
+- Limited memory between sessions
+- Context resets with new chats
+- Very little "taken out of the workplace"
+
+**But:** claude.md provides continuity
+
+---
+
+# Part 3: Memory and Context {.center}
+
+Memento and the Compacting Process
+
+---
+
+## Memento: The Memory Challenge
+
+![](../images/popculture/memento-poster.jpg){width=40%}
+
+Protagonist with no short-term memory
+Relies on notes, polaroids, tattoos
+
+---
+
+## Claude's Memory System
+
+Like Leonard in Memento:
+
+- **claude.md**: Your "polaroid notes"
+- **Compacting**: Summarizing to preserve context
+- **External memory**: Documents as reference points
+- **Tattoos**: Critical information you highlight
+
+---
+
+## claude.md Best Practices
+
+```markdown
+# Project Context
+
+## What this project does
+[Brief description]
+
+## Key decisions made
+- Decision 1: Why we chose X over Y
+- Decision 2: Architectural choice
+
+## Files to know
+- config.ts: Main configuration
+- api/: Backend endpoints
+
+## Current work
+Working on: Feature X
+Next up: Feature Y
+```
+
+---
+
+# Part 4: Web Claude for Research {.center}
+
+Examples and Demonstrations
+
+---
+
+## Research Use Cases
+
+1. **Literature review** and summarization
+2. **Data analysis** planning
+3. **Code explanation** and debugging
+4. **Writing assistance** and editing
+5. **Learning** new concepts
+
+---
+
+## Live Demo: Web Claude
+
+[Interactive demonstration of web-based Claude for research tasks]
+
+- Asking research questions
+- Analyzing documents
+- Getting explanations
+- Iterative refinement
+
+---
+
+# Part 5: Claude Code {.center}
+
+Agentic Development Workflow
+
+---
+
+## What is Claude Code?
+
+VS Code extension for agentic coding:
+
+- Direct filesystem access
+- Read, write, edit files
+- Run terminal commands
+- Integrated development
+
+---
+
+## Key Features
+
+- **Context-aware**: Reads your codebase
+- **Action-oriented**: Makes actual changes
+- **Iterative**: Refines based on results
+- **Traceable**: Shows what it does
+- **Collaborative**: You guide and approve
+
+---
+
+## Demo: Claude Code in Action
+
+[Live coding demonstration]
+
+Examples:
+- Setting up a project
+- Writing functions
+- Debugging code
+- Creating tests
+- Refactoring
+
+---
+
+## The Meta Moment
+
+**These slides were created WITH Claude Code!**
+
+- Fetching images
+- Structuring content
+- Creating Quarto presentation
+- Organizing assets
+
+---
+
+# Part 6: Reflections {.center}
+
+Lessons and Observations
+
+---
+
+## What Works Well
+
+✓ Explaining complex concepts
+✓ Generating boilerplate code
+✓ Debugging and error analysis
+✓ Learning new frameworks
+✓ Iterative refinement
+
+---
+
+## Current Limitations
+
+- Context window constraints
+- No true long-term memory
+- Requires clear instructions
+- Can be overconfident
+- Needs verification
+
+---
+
+## Best Practices
+
+1. **Be specific** in your requests
+2. **Provide context** via claude.md
+3. **Iterate** rather than expecting perfection
+4. **Verify** AI-generated code
+5. **Learn** alongside the AI
+
+---
+
+## Teaching Applications
+
+**For yourself:**
+- Accelerated learning
+- Quick prototyping
+- Understanding patterns
+
+**For others:**
+- Creating examples
+- Generating exercises
+- Explaining concepts
+
+---
+
+# Conclusion {.center}
+
+---
+
+## Key Takeaways
+
+- Modern AI combines reasoning + conversation
+- Sessions are isolated (like Severance)
+- External memory is crucial (like Memento)
+- Web Claude: research and exploration
+- Claude Code: agentic development
+- Great teaching and learning tool
+
+---
+
+## Questions? {.center}
+
+Jon Minton
+[GitHub](https://github.com/JonMinton) | [Blog](https://jonminton.github.io/jon-blog/)
+
+Thank you!
+
+---
+
+## Resources
+
+- [Claude Documentation](https://claude.ai)
+- [Claude Code Extension](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code)
+- [My Blog Post: WiredClothMother](https://jonminton.github.io/jon-blog/posts/wired-cloth-mother/)
+- [TechTalks Edinburgh](https://www.meetup.com/techtalks-edinburgh/)
