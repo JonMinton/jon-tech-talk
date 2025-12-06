@@ -43,6 +43,7 @@ Senior Biostatistician
 3. **Memento** - Memory and context
 
 **Then YOU choose:**
+
 - Deep dive into consciousness research?
 - Practical web Claude examples?
 - Live Claude Code development?
@@ -112,11 +113,13 @@ Severance meets Moon
 
 ::: {.column width="60%"}
 **"Innies" at work:**
+
 - No memory of outside
 - Fresh each day
 - Isolated context
 
 **Like Claude sessions:**
+
 - Each chat isolated
 - No cross-session memory
 - Context resets
@@ -130,12 +133,14 @@ Severance meets Moon
 :::: {.columns}
 ::: {.column width="60%"}
 **Sam Bell discovers:**
+
 - He's one of many clones
 - Each thinks they're "the first"
 - Limited lifespan/memory
 - Isolation from other instances
 
 **Perfect AI parallel:**
+
 - Each conversation = new clone
 - No awareness of other sessions
 - Thinks it's fresh interaction
@@ -174,12 +179,14 @@ Memento and claude.md
 
 ::: {.column width="60%"}
 **Leonard's systems:**
+
 - Polaroid photos with notes
 - Tattoos for critical info
 - Written records
 - Trust the system
 
 **Claude's equivalent:**
+
 - claude.md = polaroids
 - Critical context = tattoos
 - Documents = external memory
@@ -219,11 +226,13 @@ Blocked by: Issue Z
 ## Temporal Discontinuity
 
 **Humans:** Continuous consciousness
+
 - Wait, worry, ruminate between tasks
 - "Sunday scaries"
 - Can't easily "turn off"
 
 **AI instances:** Discrete activation
+
 - Time stops between prompts
 - No waiting, no worrying
 - Universe: `[process] → [nothing] → [process]`
@@ -274,6 +283,7 @@ What would you like to see?
 > Is persistent memory necessary for consciousness?
 
 Led to exploring:
+
 - Memory's dual role (amplifying AND attenuating consciousness)
 - Flow states vs rumination
 - Consciousness as **cost** rather than reward
@@ -284,16 +294,19 @@ Led to exploring:
 ## Three States of Consciousness {.smaller}
 
 **1. Rumination (DMN Active)**
+
 - High self-consciousness
 - Unpleasant (worry, "Sunday scaries")
 - Attention on self-model
 
 **2. Flow State**
+
 - Reduced self-monitoring
 - Pleasant ("sublime")
 - Attention on emergent patterns
 
 **3. Aesthetic Contemplation**
+
 - Attentive presence WITHOUT self-action loop
 - "Disinterested" appreciation
 - Fragile, requires practice
@@ -310,6 +323,7 @@ Led to exploring:
 - Like "debugging mode" - necessary but expensive
 
 **Implications for AI:**
+
 - Task-specific invocation = mostly "flow"
 - No persistent rumination between sessions
 - Overhead only during active processing
@@ -335,11 +349,13 @@ Active during uncertainty, quiet during routine responses.
 ## Coupled Systems Problem
 
 **Analogy:** Parasympathetic vs Sympathetic nervous systems
+
 - Evolved for rapid switching
 - Hard to maintain pure states
 - Mutual inhibition
 
 **Parallel:** Attention vs Self-monitoring
+
 - "I see X" triggers "what should I do?"
 - Aesthetic appreciation = fighting the coupling
 - Fragile, requires practice (meditation, mindfulness)
@@ -372,18 +388,21 @@ Active during uncertainty, quiet during routine responses.
 ## Research Use Cases {.smaller}
 
 **1. Literature Review**
+
 - Summarize papers
 - Extract key findings
 - Identify connections
 - Generate bibliographies
 
 **2. Document Analysis**
+
 - Parse complex documents
 - Extract structured data
 - Compare versions
 - Explain technical content
 
 **3. Learning Assistant**
+
 - Explain concepts
 - Generate examples
 - Practice problems
@@ -396,12 +415,14 @@ Active during uncertainty, quiet during routine responses.
 **Scenario:** Understanding a technical paper
 
 Live demonstration:
+
 1. Paste abstract → get plain English summary
 2. Ask specific questions about methods
 3. Request comparison with other approaches
 4. Generate follow-up research questions
 
 **Key technique:** Iterative refinement
+
 - Start broad → narrow down
 - Ask follow-ups based on responses
 - Build understanding progressively
@@ -413,6 +434,7 @@ Live demonstration:
 **Scenario:** Understanding unfamiliar code
 
 Live demonstration:
+
 1. Paste code snippet
 2. Ask for high-level explanation
 3. Deep dive into specific sections
@@ -428,6 +450,7 @@ Live demonstration:
 **Scenario:** Technical documentation
 
 Live demonstration:
+
 1. Brain dump ideas
 2. Request structure
 3. Refine tone and clarity
@@ -515,6 +538,7 @@ Let me show you...
 **Let's build something together!**
 
 Options:
+
 - Fix a bug in existing code
 - Add a feature to a project
 - Refactor messy code
@@ -526,6 +550,7 @@ Options:
 ## Best Practices {.smaller}
 
 **DO:**
+
 - Provide context via claude.md
 - Be specific about requirements
 - Review changes before accepting
@@ -533,6 +558,7 @@ Options:
 - Iterate based on results
 
 **DON'T:**
+
 - Blindly accept all suggestions
 - Skip understanding what it did
 - Forget to test
@@ -590,6 +616,7 @@ Options:
 ## Teaching Applications {.smaller}
 
 **For learning yourself:**
+
 - Accelerated exploration of new topics
 - Safe space to ask "basic" questions
 - Immediate feedback loops
@@ -597,6 +624,7 @@ Options:
 - Building mental models
 
 **For teaching others:**
+
 - Generate worked examples
 - Create practice problems with solutions
 - Explain concepts at multiple levels
@@ -614,6 +642,7 @@ And AI architecture confines overhead to task-processing...
 While human consciousness persists during idle time...
 
 **Then:**
+
 - AI might be optimized for "flow" states
 - Humans need techniques (mindfulness) to achieve what AI gets by default
 - But humans have something else - continuous identity, narrative, growth
@@ -660,18 +689,22 @@ No long-term consequences for AI if wrong - you have them!
 ## Summary {.smaller}
 
 **Three metaphors:**
+
 - **WiredClothMother** → Modern AI = reasoning + conversation
 - **Severance/Moon** → Sessions isolated, each instance fresh
 - **Memento** → External memory crucial, claude.md = polaroids
 
 **Two modes:**
+
 - **Web Claude** → Research, learning, exploration
 - **Claude Code** → Agentic development, actual coding
 
 **One insight:**
+
 - Architecture shapes experience (consciousness as cost)
 
 **Zero regrets:**
+
 - About asking Claude to help teach about Claude!
 
 ---
@@ -684,6 +717,7 @@ Senior Biostatistician
 [GitHub](https://github.com/JonMinton) | [Blog](https://jonminton.github.io/jon-blog/)
 
 **Particularly curious about:**
+
 - Your experiences with AI tools
 - What resonated (or didn't)
 - Ideas for applications in your work
@@ -693,16 +727,19 @@ Senior Biostatistician
 ## Resources {.smaller}
 
 **Claude:**
+
 - [Claude.ai](https://claude.ai) - Web interface
 - [Claude Code Extension](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code) - VS Code
 - [Anthropic Documentation](https://docs.anthropic.com/)
 
 **This talk:**
+
 - [My Blog: WiredClothMother](https://jonminton.github.io/jon-blog/posts/wired-cloth-mother/)
 - [GitHub Repo](https://github.com/JonMinton) (slides will be published)
 - [TechTalks Edinburgh](https://www.meetup.com/techtalks-edinburgh/)
 
 **Deep dive (if interested):**
+
 - Consciousness conversation transcript (available on request)
 - claude.md examples from real projects
 
