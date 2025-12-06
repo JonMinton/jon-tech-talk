@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.3.450">
 
   <meta name="author" content="Jon Minton">
-  <meta name="dcterms.date" content="2024-12-10">
+  <meta name="dcterms.date" content="2025-12-10">
   <title>Teaching (Yourself and Others) with Claude</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -403,12 +403,12 @@ Jon Minton
 </div>
 </div>
 
-  <p class="date">2024-12-10</p>
+  <p class="date">2025-12-10</p>
 </section>
 <section id="welcome" class="slide level2 center">
 <h2>Welcome</h2>
 <p><strong>TechTalks Edinburgh #4</strong></p>
-<p>Clockwise Edinburgh Leith December 10, 2024 | 7:30-8:15 PM</p>
+<p>Clockwise Edinburgh Leith December 10, 2025 | 7:30-8:15 PM</p>
 </section>
 <section id="about-me" class="slide level2 smaller">
 <h2>About Me</h2>
@@ -783,48 +783,105 @@ Jon Minton
 <li>Progressive complexity</li>
 </ul>
 </section>
-<section id="demo-1-analyzing-research" class="slide level2 scrollable">
-<h2>Demo 1: Analyzing Research</h2>
-<p><strong>Scenario:</strong> Understanding a technical paper</p>
-<p>Live demonstration:</p>
-<ol type="1">
-<li>Paste abstract → get plain English summary</li>
-<li>Ask specific questions about methods</li>
-<li>Request comparison with other approaches</li>
-<li>Generate follow-up research questions</li>
-</ol>
-<p><strong>Key technique:</strong> Iterative refinement</p>
+<section id="example-glm-teaching-tool-design" class="slide level2 scrollable">
+<h2>Example: GLM Teaching Tool Design</h2>
+<p><strong>Real conversation:</strong> Designing interactive statistics education</p>
+<p><strong>The challenge:</strong> Teach Generalised Linear Models without overwhelming students</p>
+<p><strong>Web Claude helped:</strong></p>
 <ul>
-<li>Start broad → narrow down</li>
-<li>Ask follow-ups based on responses</li>
-<li>Build understanding progressively</li>
+<li>Design three-component framework: g(·) transformers, f(·) noisemakers, h(·) predictors</li>
+<li>Plan progressive disclosure (page-by-page guided tour)</li>
+<li>Specify React component structure</li>
+<li>Create pedagogical sequencing (beginner → advanced)</li>
+<li>Design loss function explorer showing MLE among alternatives</li>
 </ul>
+<p><strong>Key insight:</strong> Web Claude excels at <em>conceptual design</em> before implementation</p>
+<p><a href="https://claude.ai/chat/4929d441-e726-4329-b627-7a45ade0cfd2">View GLM tool design conversation</a></p>
 </section>
-<section id="demo-2-code-explanation" class="slide level2">
-<h2>Demo 2: Code Explanation</h2>
-<p><strong>Scenario:</strong> Understanding unfamiliar code</p>
-<p>Live demonstration:</p>
-<ol type="1">
-<li>Paste code snippet</li>
-<li>Ask for high-level explanation</li>
-<li>Deep dive into specific sections</li>
-<li>Request alternative implementations</li>
-<li>Identify potential bugs</li>
-</ol>
-<p><strong>Advantage:</strong> Patient, doesn’t judge “basic” questions</p>
+<section id="example-statistical-analysis-components" class="slide level2 scrollable">
+<h2>Example: Statistical Analysis Components</h2>
+<p><strong>Real conversation:</strong> Blood pressure medication analysis</p>
+<p><strong>The challenge:</strong> Separate medication effects from circadian patterns</p>
+<p><strong>Web Claude helped:</strong></p>
+<ul>
+<li>Design multiple regression controlling for time-of-day</li>
+<li>Create interactive React visualization components</li>
+<li>Implement bootstrap confidence intervals with LOWESS smoothers</li>
+<li>Build regression diagnostics with visual feedback</li>
+<li>Compare AM/PM and measurement variations</li>
+</ul>
+<p><strong>Pattern:</strong> Extended dialogue refining both analysis AND teaching tools</p>
+<p><a href="https://claude.ai/chat/d576ab32-0aa8-4fa2-b626-f18146aa3522">View BP analysis conversation</a></p>
 </section>
-<section id="demo-3-writing-assistance" class="slide level2">
-<h2>Demo 3: Writing Assistance</h2>
-<p><strong>Scenario:</strong> Technical documentation</p>
-<p>Live demonstration:</p>
-<ol type="1">
-<li>Brain dump ideas</li>
-<li>Request structure</li>
-<li>Refine tone and clarity</li>
-<li>Generate examples</li>
-<li>Identify gaps</li>
-</ol>
-<p><strong>Not ghostwriting</strong> - collaborative refinement</p>
+<section id="example-visualization-reimagined" class="slide level2 scrollable">
+<h2>Example: Visualization Reimagined</h2>
+<p><strong>Real conversation:</strong> Florence Nightingale’s Coxcomb chart</p>
+<p><strong>The challenge:</strong> Show how coordinate choice affects perception</p>
+<p><strong>Web Claude helped:</strong></p>
+<ul>
+<li>Convert historical polar chart to Cartesian coordinates</li>
+<li>Annotate sanitation reform effects</li>
+<li>Explore when radial vs linear is appropriate</li>
+<li>Design interactive coordinate transformation tool</li>
+</ul>
+<p><strong>Insight:</strong> Sometimes “explaining” means “redesigning”</p>
+<p><a href="https://claude.ai/chat/8e1227a3-7ef3-4ad6-88a0-c7134fe2aac1">View Nightingale visualization conversation</a></p>
+</section>
+<section id="example-bitcoin-fundamental-valuation" class="slide level2 scrollable">
+<h2>Example: Bitcoin Fundamental Valuation</h2>
+<p><strong>Real conversation:</strong> Is Bitcoin overvalued or undervalued?</p>
+<p><strong>The challenge:</strong> Develop data-driven valuation model</p>
+<p><strong>Web Claude helped:</strong></p>
+<ul>
+<li>Design trough-based exponential growth models</li>
+<li>Create interactive manual trough selection tools</li>
+<li>Compare with academic literature (Metcalfe’s Law, MVRV)</li>
+<li>Analyze growth deceleration patterns</li>
+<li><strong>Result:</strong> BTC trading at 13% discount vs fundamental value</li>
+</ul>
+<p><strong>Technical depth:</strong> Statistical modeling + domain research + interactive tools</p>
+<p><a href="https://claude.ai/chat/16911e74-c302-466b-b250-fc44cd4b9541">View Bitcoin analysis conversation</a></p>
+</section>
+<section id="the-design-first-pattern" class="slide level2">
+<h2>The Design-First Pattern</h2>
+<p><strong>What these examples show:</strong></p>
+<table>
+<colgroup>
+<col style="width: 31%">
+<col style="width: 27%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Stage</th>
+<th>Tool</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>🎨 <strong>Design</strong></td>
+<td>Web Claude</td>
+<td>Conceptual exploration, “riffing” on ideas</td>
+</tr>
+<tr class="even">
+<td>📐 <strong>Specify</strong></td>
+<td>Web Claude</td>
+<td>Component structure, data flow, pedagogy</td>
+</tr>
+<tr class="odd">
+<td>💻 <strong>Implement</strong></td>
+<td>Claude Code</td>
+<td>Actual React components, file operations</td>
+</tr>
+<tr class="even">
+<td>🔄 <strong>Iterate</strong></td>
+<td>Both</td>
+<td>Refinement based on results</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key insight:</strong> Don’t jump straight to coding. Use Web Claude’s conversational strength to explore the <em>problem space</em> first.</p>
 </section>
 <section id="branch-b" class="slide level2 center">
 <h2>[BRANCH B] Claude Code Agentic</h2>
