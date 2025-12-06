@@ -2,7 +2,7 @@
 title: "Teaching (Yourself and Others) with Claude"
 subtitle: "Experiments and Reflections"
 author: "Jon Minton"
-date: "December 10, 2024"
+date: "December 10, 2025"
 format:
   revealjs:
     theme: dark
@@ -16,7 +16,7 @@ format:
 **TechTalks Edinburgh #4**
 
 Clockwise Edinburgh Leith
-December 10, 2024 | 7:30-8:15 PM
+December 10, 2025 | 7:30-8:15 PM
 
 ---
 

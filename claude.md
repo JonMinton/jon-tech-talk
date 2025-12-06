@@ -5,6 +5,7 @@ Creating a Quarto reveal.js presentation for **TechTalks Edinburgh #4** on Decem
 
 **Talk Title:** "Teaching (Yourself and Others) with Claude: Experiments and Reflections"
 **Speaker:** Jon Minton
+**Date:** December 10, 2025
 **Time:** 7:30-8:15 PM
 **Venue:** Clockwise Edinburgh Leith
 **Event:** https://www.meetup.com/techtalks-edinburgh/events/312266554/
@@ -114,13 +115,41 @@ jon-tech-talk/
 
 ## Technical Setup
 
-To render the presentation:
+### Defensive Rendering (IMPORTANT!)
+
+**Before rendering Quarto presentations**, run the pre-render hook to ensure image paths work:
+
+```bash
+# From repo root
+./.claude/hooks/pre-quarto-render.sh
+```
+
+This defensive script:
+- Checks that `images/` exists at repo root
+- Creates symlink `slides/images -> ../images` if needed
+- Prevents "image not found" errors across branches
+
+### Render Commands
+
 ```bash
 cd slides
 quarto render presentation.qmd
 # or
 quarto preview presentation.qmd  # for live preview
 ```
+
+### Why This Is Needed
+
+**Problem:** Quarto presentations in `slides/presentation.qmd` reference images as `images/blog/file.jpg` (relative path). This works IF `slides/images/` exists, but fails if only `images/` exists at repo root.
+
+**Solution:** Use symlink so `slides/images -> ../images` always points to source truth.
+
+**Cross-project pattern:** This issue occurs in ANY Quarto project with:
+- Source files in subdirectory (e.g., `slides/`)
+- Assets in separate directory (e.g., `images/`)
+- Relative paths in markdown (e.g., `![](images/foo.jpg)`)
+
+**Defensive hook location:** `.claude/hooks/pre-quarto-render.sh` (executable)
 
 ## Known Issues / Lessons Learned
 
@@ -139,7 +168,14 @@ quarto preview presentation.qmd  # for live preview
 4. ~~Some downloaded images corrupted~~ - **FIXED**
    - Severance poster replaced with proper 915K version
 
-5. Date discrepancy: Meetup shows "2025" but event is clearly next week (Dec 2024)
+5. **Quarto image paths** - CRITICAL recurring issue across projects
+   - **Problem:** `slides/presentation.qmd` uses `images/blog/file.jpg` but images are at repo root
+   - **Symptom:** "image not found" errors when rendering, especially after branch switches
+   - **Solution:** Run `./.claude/hooks/pre-quarto-render.sh` before rendering
+   - **Defensive:** Hook creates symlink `slides/images -> ../images` automatically
+   - **Pattern:** Applies to ANY Quarto project with nested source files and external assets
+
+6. ~~Date discrepancy~~ - **FIXED** - Event is December 10, 2025 (corrected in presentation.qmd)
 
 ## Current Status
 
