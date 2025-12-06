@@ -411,54 +411,97 @@ Active during uncertainty, quiet during routine responses.
 
 ---
 
-## Demo 1: Analyzing Research {.scrollable}
+## Example: GLM Teaching Tool Design {.scrollable}
 
-**Scenario:** Understanding a technical paper
+**Real conversation:** Designing interactive statistics education
 
-Live demonstration:
+**The challenge:** Teach Generalised Linear Models without overwhelming students
 
-1. Paste abstract → get plain English summary
-2. Ask specific questions about methods
-3. Request comparison with other approaches
-4. Generate follow-up research questions
+**Web Claude helped:**
 
-**Key technique:** Iterative refinement
+- Design three-component framework: g(·) transformers, f(·) noisemakers, h(·) predictors
+- Plan progressive disclosure (page-by-page guided tour)
+- Specify React component structure
+- Create pedagogical sequencing (beginner → advanced)
+- Design loss function explorer showing MLE among alternatives
 
-- Start broad → narrow down
-- Ask follow-ups based on responses
-- Build understanding progressively
+**Key insight:** Web Claude excels at *conceptual design* before implementation
 
----
-
-## Demo 2: Code Explanation
-
-**Scenario:** Understanding unfamiliar code
-
-Live demonstration:
-
-1. Paste code snippet
-2. Ask for high-level explanation
-3. Deep dive into specific sections
-4. Request alternative implementations
-5. Identify potential bugs
-
-**Advantage:** Patient, doesn't judge "basic" questions
+[View GLM tool design conversation](https://claude.ai/chat/4929d441-e726-4329-b627-7a45ade0cfd2)
 
 ---
 
-## Demo 3: Writing Assistance
+## Example: Statistical Analysis Components {.scrollable}
 
-**Scenario:** Technical documentation
+**Real conversation:** Blood pressure medication analysis
 
-Live demonstration:
+**The challenge:** Separate medication effects from circadian patterns
 
-1. Brain dump ideas
-2. Request structure
-3. Refine tone and clarity
-4. Generate examples
-5. Identify gaps
+**Web Claude helped:**
 
-**Not ghostwriting** - collaborative refinement
+- Design multiple regression controlling for time-of-day
+- Create interactive React visualization components
+- Implement bootstrap confidence intervals with LOWESS smoothers
+- Build regression diagnostics with visual feedback
+- Compare AM/PM and measurement variations
+
+**Pattern:** Extended dialogue refining both analysis AND teaching tools
+
+[View BP analysis conversation](https://claude.ai/chat/d576ab32-0aa8-4fa2-b626-f18146aa3522)
+
+---
+
+## Example: Visualization Reimagined {.scrollable}
+
+**Real conversation:** Florence Nightingale's Coxcomb chart
+
+**The challenge:** Show how coordinate choice affects perception
+
+**Web Claude helped:**
+
+- Convert historical polar chart to Cartesian coordinates
+- Annotate sanitation reform effects
+- Explore when radial vs linear is appropriate
+- Design interactive coordinate transformation tool
+
+**Insight:** Sometimes "explaining" means "redesigning"
+
+[View Nightingale visualization conversation](https://claude.ai/chat/8e1227a3-7ef3-4ad6-88a0-c7134fe2aac1)
+
+---
+
+## Example: Bitcoin Fundamental Valuation {.scrollable}
+
+**Real conversation:** Is Bitcoin overvalued or undervalued?
+
+**The challenge:** Develop data-driven valuation model
+
+**Web Claude helped:**
+
+- Design trough-based exponential growth models
+- Create interactive manual trough selection tools
+- Compare with academic literature (Metcalfe's Law, MVRV)
+- Analyze growth deceleration patterns
+- **Result:** BTC trading at 13% discount vs fundamental value
+
+**Technical depth:** Statistical modeling + domain research + interactive tools
+
+[View Bitcoin analysis conversation](https://claude.ai/chat/16911e74-c302-466b-b250-fc44cd4b9541)
+
+---
+
+## The Design-First Pattern
+
+**What these examples show:**
+
+| Stage | Tool | Purpose |
+|-------|------|---------|
+| 🎨 **Design** | Web Claude | Conceptual exploration, "riffing" on ideas |
+| 📐 **Specify** | Web Claude | Component structure, data flow, pedagogy |
+| 💻 **Implement** | Claude Code | Actual React components, file operations |
+| 🔄 **Iterate** | Both | Refinement based on results |
+
+**Key insight:** Don't jump straight to coding. Use Web Claude's conversational strength to explore the *problem space* first.
 
 ---
 
