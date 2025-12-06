@@ -122,16 +122,24 @@ quarto render presentation.qmd
 quarto preview presentation.qmd  # for live preview
 ```
 
-## Known Issues
+## Known Issues / Lessons Learned
 
-1. Some downloaded images are corrupted/incomplete (very small file sizes):
-   - harlow-cloth-mother.jpg (109B)
-   - harlow-surrogate-mothers.jpg (118B)
-   - severance-poster.jpg (1957B - may be too small)
+1. **Scrollable slides** - Required `scrollable: true` in YAML frontmatter for global scrolling support
+   - Individual `{.scrollable}` classes alone weren't sufficient
+   - Using `.smaller .scrollable` together prevented scrolling from working
+   - Solution: Global YAML setting + individual `{.scrollable}` markers
 
-   May need to re-download or find alternative sources.
+2. **List formatting in .qmd** - Must have blank line before lists (stricter than .md)
+   - Fixed 23 instances where lists followed bold text without spacing
 
-2. Date discrepancy: Meetup shows "2025" but event is clearly next week (Dec 2024)
+3. **YAML configuration** - Simplified to minimal settings for compatibility
+   - Removed: transitions, chalkboard, logo, auto-stretch override
+   - Kept: theme, slide-number, footer, scrollable
+
+4. ~~Some downloaded images corrupted~~ - **FIXED**
+   - Severance poster replaced with proper 915K version
+
+5. Date discrepancy: Meetup shows "2025" but event is clearly next week (Dec 2024)
 
 ## Current Status
 
@@ -142,6 +150,9 @@ quarto preview presentation.qmd  # for live preview
 ✅ Folder structure organized
 ✅ Consciousness conversation captured (notes/ folder)
 ✅ Interleaved format shows thinking steps as overhead
+✅ Scrollable slides working correctly (global scrollable: true in YAML)
+✅ List formatting fixed (blank lines before lists in .qmd)
+✅ YAML simplified for compatibility
 ⏳ Awaiting review and iteration with Jon
 ⏳ Live demo sections need specific examples
 ⏳ May need to practice branch transitions

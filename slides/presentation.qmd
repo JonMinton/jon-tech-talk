@@ -6,13 +6,9 @@ date: "December 10, 2024"
 format:
   revealjs:
     theme: dark
-    transition: slide
-    background-transition: fade
     slide-number: true
-    chalkboard: true
-    logo: ""
     footer: "TechTalks Edinburgh #4 | Clockwise Edinburgh Leith"
-    auto-stretch: false  # Prevent conflicts with .scrollable slides
+    scrollable: true
 ---
 
 ## Welcome {.center}
@@ -196,7 +192,7 @@ Memento and claude.md
 
 ---
 
-## claude.md Best Practices {.smaller .scrollable}
+## claude.md Best Practices {.scrollable}
 
 ```markdown
 # Project Context
@@ -248,7 +244,7 @@ What would you like to see?
 
 ---
 
-## Choose Your Adventure {.smaller .scrollable}
+## Choose Your Adventure {.scrollable}
 
 **Option A: Consciousness Deep Dive** 🧠
 - Real Claude conversation about memory/consciousness
@@ -292,7 +288,7 @@ Led to exploring:
 
 ---
 
-## Three States of Consciousness {.smaller .scrollable}
+## Three States of Consciousness {.scrollable}
 
 **1. Rumination (DMN Active)**
 
@@ -331,7 +327,7 @@ Led to exploring:
 
 ---
 
-## Seeing the Overhead {.smaller .scrollable}
+## Seeing the Overhead {.scrollable}
 
 **Hidden thinking steps reveal self-monitoring:**
 
@@ -363,7 +359,7 @@ Active during uncertainty, quiet during routine responses.
 
 ---
 
-## AI's Architectural Advantage? {.smaller .scrollable}
+## AI's Architectural Advantage? {.scrollable}
 
 **Optimistic reading:**
 
@@ -386,7 +382,7 @@ Active during uncertainty, quiet during routine responses.
 
 ---
 
-## Research Use Cases {.smaller .scrollable}
+## Research Use Cases {.scrollable}
 
 **1. Literature Review**
 
@@ -411,7 +407,7 @@ Active during uncertainty, quiet during routine responses.
 
 ---
 
-## Demo 1: Analyzing Research {.smaller .scrollable}
+## Demo 1: Analyzing Research {.scrollable}
 
 **Scenario:** Understanding a technical paper
 
@@ -490,7 +486,7 @@ Let me show you...
 
 ---
 
-## Live Demo: How These Slides Happened {.smaller .scrollable}
+## Live Demo: How These Slides Happened {.scrollable}
 
 **Session replay:**
 
@@ -505,7 +501,7 @@ Let me show you...
 
 ---
 
-## Typical Workflow {.smaller .scrollable}
+## Typical Workflow {.scrollable}
 
 **1. Context gathering**
 ```
@@ -548,7 +544,7 @@ Options:
 
 ---
 
-## Best Practices {.smaller .scrollable}
+## Best Practices {.scrollable}
 
 **DO:**
 
@@ -568,7 +564,7 @@ Options:
 
 ---
 
-## When It Shines {.smaller .scrollable}
+## When It Shines {.scrollable}
 
 ✓ **Boilerplate** - config files, setup scripts
 ✓ **Patterns** - "do the same for all endpoints"
@@ -587,7 +583,7 @@ Options:
 
 ---
 
-## What Works Well {.smaller .scrollable}
+## What Works Well {.scrollable}
 
 ✓ **Explaining complex concepts**
 ✓ **Generating boilerplate code**
@@ -601,7 +597,7 @@ Options:
 
 ---
 
-## Current Limitations {.smaller .scrollable}
+## Current Limitations {.scrollable}
 
 - **Context window constraints** (but getting better)
 - **No true long-term memory** (hence claude.md)
@@ -614,7 +610,7 @@ Options:
 
 ---
 
-## Teaching Applications {.smaller .scrollable}
+## Teaching Applications {.scrollable}
 
 **For learning yourself:**
 
@@ -634,7 +630,7 @@ Options:
 
 ---
 
-## The Philosophy {.smaller .scrollable}
+## The Philosophy {.scrollable}
 
 **If consciousness is overhead for flexibility...**
 
@@ -652,7 +648,7 @@ While human consciousness persists during idle time...
 
 ---
 
-## Practical Takeaways {.smaller .scrollable}
+## Practical Takeaways {.scrollable}
 
 **1. Use claude.md religiously**
 Like Leonard's polaroids - future-you will thank you
@@ -687,7 +683,7 @@ No long-term consequences for AI if wrong - you have them!
 
 ---
 
-## Summary {.smaller .scrollable}
+## Summary {.scrollable}
 
 **Three metaphors:**
 
@@ -725,7 +721,7 @@ Senior Biostatistician
 
 ---
 
-## Resources {.smaller .scrollable}
+## Resources {.scrollable}
 
 **Claude:**
 
