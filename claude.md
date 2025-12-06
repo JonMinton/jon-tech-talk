@@ -14,66 +14,79 @@ Creating a Quarto reveal.js presentation for **TechTalks Edinburgh #4** on Decem
 ```
 jon-tech-talk/
 ├── slides/
-│   └── presentation.qmd       # Main Quarto reveal.js presentation
+│   └── presentation.qmd       # Main Quarto reveal.js presentation (MODULAR)
 ├── images/
 │   ├── blog/                  # Assets from wired-cloth-mother blog post
 │   │   ├── harlow-experiment.jpg
-│   │   ├── harlow-cloth-mother.jpg (small/corrupted)
-│   │   ├── harlow-surrogate-mothers.jpg (small/corrupted)
+│   │   ├── harlow-cloth-mother.jpg (small/corrupted - not used)
+│   │   ├── harlow-surrogate-mothers.jpg (small/corrupted - not used)
 │   │   ├── images_large_fg1.jpeg
 │   │   ├── demis-hassabis.jpg
 │   │   ├── sam-altman.jpg
 │   │   └── hype-and-capability.png
 │   └── popculture/            # Pop culture reference images
 │       ├── severance-poster.jpg (small - may need replacement)
-│       └── memento-poster.jpg
+│       ├── memento-poster.jpg
+│       └── moon-poster.jpg (NEW - 250K)
+├── notes/                     # Supporting materials
+│   ├── consciousness-discussion.md        # Synthesized insights
+│   └── consciousness-conversation-interleaved.md  # Full transcript with thinking steps
 ├── claude.md                  # This file - project context
 └── background.md              # Original project brief
 ```
 
-## Presentation Structure
+## Presentation Structure (MODULAR with Audience Choice!)
 
-### 1. Title & Introduction
-- Event details and speaker intro
-- Brief background on AI journey (skeptic → enthusiast)
+### Core Introduction (Everyone sees)
+1. **Title & Welcome** - Event details, speaker intro
+2. **Today's Journey** - Overview of 3 metaphors + audience choice
+3. **WiredClothMother** - Why modern AI is different (Harlow experiment)
+4. **Severance + Moon** - Session isolation and cloned instances
+5. **Memento** - External memory and claude.md
+6. **Temporal Discontinuity** - AI's discrete activation vs human continuous consciousness
 
-### 2. Understanding AI Reasoning (WiredClothMother)
-- Harlow's wire/cloth mother experiment metaphor
-- DeepMind (Hassabis) = Wire Mother: function without form
-- OpenAI (Altman) = Cloth Mother: form without function
-- Modern LLMs = WiredClothMother: both reasoning AND conversation
-- Source: https://jonminton.github.io/jon-blog/posts/wired-cloth-mother/
+### Audience Choice Point (~15 min in)
+**Four branches available:**
 
-### 3. How Claude Sessions Work (Severance metaphor)
-- Each session isolated like "innies" in Severance TV show
-- Limited cross-session memory
-- "Nothing taken out of the workplace"
-- claude.md provides continuity across sessions
+**BRANCH A: Consciousness Deep Dive** 🧠
+- Real conversation about memory/consciousness
+- Three states: rumination, flow, aesthetic contemplation
+- "Consciousness as cost" rather than reward
+- Thinking steps reveal overhead
+- Coupled systems (parasympathetic/sympathetic parallel)
+- AI's architectural advantage (no rumination!)
+- **Target audience:** Philosophers, researchers, curious minds
+- **Duration:** ~15 minutes
 
-### 4. Memory and Context (Memento metaphor)
-- Like Leonard's external memory systems (notes, polaroids)
-- claude.md as your "polaroid notes"
-- Compacting process for preserving context
-- Best practices for maintaining project context
+**BRANCH B: Web Claude Practical** 🌐
+- Research use cases (literature review, document analysis, learning)
+- Demo 1: Analyzing research papers
+- Demo 2: Code explanation
+- Demo 3: Writing assistance
+- Iterative refinement techniques
+- **Target audience:** Researchers, writers, learners
+- **Duration:** ~15 minutes
 
-### 5. Web Claude for Research
-- Literature review and summarization
-- Data analysis planning
-- Code explanation and debugging
-- Live demonstration examples
+**BRANCH C: Claude Code Agentic** 💻
+- What is Claude Code (VS Code extension)
+- How these slides were made (meta!)
+- Live coding session (audience can suggest)
+- Typical workflow demonstration
+- Best practices and when it shines
+- **Target audience:** Developers, technical practitioners
+- **Duration:** ~15 minutes
 
-### 6. Claude Code for Agentic Development
-- VS Code extension capabilities
-- Direct filesystem access and code editing
-- Context-aware development
-- Live coding demonstration
-- **Meta moment**: These slides were created WITH Claude Code!
+**BRANCH D: Lightning Tour** ⚡
+- Quick taste of each (5 min each)
+- **Duration:** ~15 minutes
 
-### 7. Reflections and Conclusion
-- What works well
+### Convergence (All paths merge)
+- Reflections on what works well
 - Current limitations
-- Best practices
 - Teaching applications
+- Philosophy (consciousness as overhead)
+- Practical takeaways
+- Meta-reflection
 - Q&A
 
 ## Key Design Decisions
@@ -89,8 +102,9 @@ jon-tech-talk/
    - Tech meetup aesthetic
 
 3. **Pop Culture Metaphors:**
-   - Severance: session isolation/memory compartmentalization
-   - Memento: external memory systems (claude.md)
+   - **Severance**: Session isolation (work/personal separation)
+   - **Moon**: Cloned instances with no continuity (added - perfect parallel!)
+   - **Memento**: External memory systems (claude.md as polaroids)
    - Her: Initially suggested but less relevant (dropped)
 
 4. **Visual Strategy:**
@@ -122,21 +136,42 @@ quarto preview presentation.qmd  # for live preview
 ## Current Status
 
 ✅ Initial presentation structure complete
-✅ All sections outlined
-✅ Images downloaded (some may need replacement)
+✅ Modular design with audience choice built in
+✅ All sections outlined with 4 branching paths
+✅ Images downloaded (Moon added, Severance small but usable)
 ✅ Folder structure organized
+✅ Consciousness conversation captured (notes/ folder)
+✅ Interleaved format shows thinking steps as overhead
 ⏳ Awaiting review and iteration with Jon
 ⏳ Live demo sections need specific examples
-⏳ May need to add speaker notes
+⏳ May need to practice branch transitions
 
 ## Next Steps
 
-1. Review content with Jon - adjust depth, order, emphasis
-2. Replace corrupted/small image files if needed
-3. Add specific examples for web Claude and Claude Code demos
+1. Review modular structure with Jon
+2. Decide default path if audience doesn't choose
+3. Prepare specific examples for each branch:
+   - Branch A: Show consciousness transcript? Thinking steps?
+   - Branch B: Have research paper/code ready to analyze
+   - Branch C: Simple project to code live
 4. Test presentation rendering with Quarto
-5. Add speaker notes if desired
-6. Practice timing (45 min talk slot)
+5. Practice timing for each branch (~45 min total)
+6. Consider adding speaker notes for transitions
+
+## Key Innovation: Audience Choice
+
+The presentation is designed like:
+- **Core** (15 min): Everyone gets fundamental concepts + metaphors
+- **Choice** (15 min): Audience picks depth vs breadth, theory vs practice
+- **Convergence** (15 min): All paths lead to shared takeaways
+
+This respects that tech meetup audiences are diverse:
+- Some want philosophical depth
+- Some want practical tools
+- Some want to see code
+- Some want variety
+
+Jon can read the room and adapt!
 
 ## References
 
