@@ -246,32 +246,36 @@ What would you like to see?
 
 ## Choose Your Adventure {.scrollable}
 
-**Option A: Consciousness Deep Dive** 🧠
-- Real Claude conversation about memory/consciousness
-- "Consciousness as cost, not feature"
-- Flow states, aesthetic appreciation, rumination
-- Philosophical but fascinating
+**[Option A: Web Claude Practical](#branch-a)** 🌐
 
-**Option B: Web Claude Practical** 🌐
 - Research and document analysis
 - Code explanation and learning
 - Writing assistance
 - Iteration examples
 
-**Option C: Claude Code Agentic** 💻
+**[Option B: Claude Code Agentic](#branch-b)** 💻
+
 - Live development session
 - These slides were made with it!
 - File operations, git integration
 - Real coding workflow
 
-**Option D: Lightning Tour** ⚡
+**[Option C: Consciousness Deep Dive](#branch-c)** 🧠
+
+- Real Claude conversation about memory/consciousness
+- "Consciousness as cost, not feature"
+- Flow states, aesthetic appreciation, rumination
+- Philosophical but fascinating
+
+**[Option D: Lightning Tour](#lightning-tour)** ⚡
+
 - Quick taste of each
 
 ---
 
-## [BRANCH A] Consciousness Research {.center .smaller}
+## [BRANCH C] Consciousness Research {#branch-c .center}
 
-*Skip to appropriate branch based on audience choice*
+*[Back to choice](#choose-your-adventure) | Philosophical deep dive*
 
 ---
 
@@ -376,9 +380,9 @@ Active during uncertainty, quiet during routine responses.
 
 ---
 
-## [BRANCH B] Web Claude Examples {.center}
+## [BRANCH A] Web Claude Examples {#branch-a .center}
 
-*Live demonstrations*
+*[Back to choice](#choose-your-adventure) | Live demonstrations*
 
 ---
 
@@ -458,9 +462,9 @@ Live demonstration:
 
 ---
 
-## [BRANCH C] Claude Code Agentic {.center}
+## [BRANCH B] Claude Code Agentic {#branch-b .center}
 
-*Live development session*
+*[Back to choice](#choose-your-adventure) | Live development session*
 
 ---
 
