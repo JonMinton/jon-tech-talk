@@ -195,7 +195,7 @@ Memento and claude.md
 
 ---
 
-## claude.md Best Practices {.smaller}
+## claude.md Best Practices {.smaller .scrollable}
 
 ```markdown
 # Project Context
@@ -247,7 +247,7 @@ What would you like to see?
 
 ---
 
-## Choose Your Adventure {.smaller}
+## Choose Your Adventure {.smaller .scrollable}
 
 **Option A: Consciousness Deep Dive** 🧠
 - Real Claude conversation about memory/consciousness
@@ -291,7 +291,7 @@ Led to exploring:
 
 ---
 
-## Three States of Consciousness {.smaller}
+## Three States of Consciousness {.smaller .scrollable}
 
 **1. Rumination (DMN Active)**
 
@@ -330,7 +330,7 @@ Led to exploring:
 
 ---
 
-## Seeing the Overhead {.smaller}
+## Seeing the Overhead {.smaller .scrollable}
 
 **Hidden thinking steps reveal self-monitoring:**
 
@@ -362,7 +362,7 @@ Active during uncertainty, quiet during routine responses.
 
 ---
 
-## AI's Architectural Advantage? {.smaller}
+## AI's Architectural Advantage? {.smaller .scrollable}
 
 **Optimistic reading:**
 
@@ -385,7 +385,7 @@ Active during uncertainty, quiet during routine responses.
 
 ---
 
-## Research Use Cases {.smaller}
+## Research Use Cases {.smaller .scrollable}
 
 **1. Literature Review**
 
@@ -410,7 +410,7 @@ Active during uncertainty, quiet during routine responses.
 
 ---
 
-## Demo 1: Analyzing Research {.smaller}
+## Demo 1: Analyzing Research {.smaller .scrollable}
 
 **Scenario:** Understanding a technical paper
 
@@ -489,7 +489,7 @@ Let me show you...
 
 ---
 
-## Live Demo: How These Slides Happened {.smaller}
+## Live Demo: How These Slides Happened {.smaller .scrollable}
 
 **Session replay:**
 
@@ -504,7 +504,7 @@ Let me show you...
 
 ---
 
-## Typical Workflow {.smaller}
+## Typical Workflow {.smaller .scrollable}
 
 **1. Context gathering**
 ```
@@ -547,7 +547,7 @@ Options:
 
 ---
 
-## Best Practices {.smaller}
+## Best Practices {.smaller .scrollable}
 
 **DO:**
 
@@ -567,7 +567,7 @@ Options:
 
 ---
 
-## When It Shines {.smaller}
+## When It Shines {.smaller .scrollable}
 
 ✓ **Boilerplate** - config files, setup scripts
 ✓ **Patterns** - "do the same for all endpoints"
@@ -586,7 +586,7 @@ Options:
 
 ---
 
-## What Works Well {.smaller}
+## What Works Well {.smaller .scrollable}
 
 ✓ **Explaining complex concepts**
 ✓ **Generating boilerplate code**
@@ -600,7 +600,7 @@ Options:
 
 ---
 
-## Current Limitations {.smaller}
+## Current Limitations {.smaller .scrollable}
 
 - **Context window constraints** (but getting better)
 - **No true long-term memory** (hence claude.md)
@@ -613,7 +613,7 @@ Options:
 
 ---
 
-## Teaching Applications {.smaller}
+## Teaching Applications {.smaller .scrollable}
 
 **For learning yourself:**
 
@@ -633,7 +633,7 @@ Options:
 
 ---
 
-## The Philosophy {.smaller}
+## The Philosophy {.smaller .scrollable}
 
 **If consciousness is overhead for flexibility...**
 
@@ -651,7 +651,7 @@ While human consciousness persists during idle time...
 
 ---
 
-## Practical Takeaways {.smaller}
+## Practical Takeaways {.smaller .scrollable}
 
 **1. Use claude.md religiously**
 Like Leonard's polaroids - future-you will thank you
@@ -686,7 +686,7 @@ No long-term consequences for AI if wrong - you have them!
 
 ---
 
-## Summary {.smaller}
+## Summary {.smaller .scrollable}
 
 **Three metaphors:**
 
@@ -724,7 +724,7 @@ Senior Biostatistician
 
 ---
 
-## Resources {.smaller}
+## Resources {.smaller .scrollable}
 
 **Claude:**
 

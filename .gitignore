@@ -1,0 +1,6 @@
+# Quarto rendered output
+slides/presentation.html
+slides/presentation_files/
+
+# OS files
+.DS_Store
