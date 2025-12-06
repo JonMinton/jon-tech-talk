@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - branch: gh-pages
+      url: "https://jonminton.github.io/jon-tech-talk/"

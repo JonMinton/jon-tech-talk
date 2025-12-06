@@ -56,7 +56,7 @@ Understanding Modern AI
 
 ## Harlow's Experiment (1950s)
 
-![](../images/blog/harlow-experiment.jpg){width=60%}
+![](images/blog/harlow-experiment.jpg){width=60%}
 
 **Wire Mother:** Function without comfort
 **Cloth Mother:** Comfort without function
@@ -67,7 +67,7 @@ Understanding Modern AI
 
 :::: {.columns}
 ::: {.column width="50%"}
-![Demis Hassabis (DeepMind)](../images/blog/demis-hassabis.jpg){width=80%}
+![Demis Hassabis (DeepMind)](images/blog/demis-hassabis.jpg){width=80%}
 
 **Wire Mother**
 Function without form
@@ -75,7 +75,7 @@ Function without form
 :::
 
 ::: {.column width="50%"}
-![Sam Altman (OpenAI)](../images/blog/sam-altman.jpg){width=80%}
+![Sam Altman (OpenAI)](images/blog/sam-altman.jpg){width=80%}
 
 **Cloth Mother**
 Form without function
@@ -91,7 +91,7 @@ Form without function
 
 Both reasoning capability AND natural conversation
 
-![](../images/blog/hype-and-capability.png){width=60%}
+![](images/blog/hype-and-capability.png){width=60%}
 
 ---
 
@@ -105,7 +105,7 @@ Severance meets Moon
 
 :::: {.columns}
 ::: {.column width="40%"}
-![](../images/popculture/severance-poster.jpg){width=100%}
+![](images/popculture/severance-poster.jpg){width=100%}
 :::
 
 ::: {.column width="60%"}
@@ -144,7 +144,7 @@ Severance meets Moon
 :::
 
 ::: {.column width="40%"}
-![Moon (2009)](../images/popculture/moon-poster.jpg){width=100%}
+![Moon (2009)](images/popculture/moon-poster.jpg){width=100%}
 :::
 ::::
 
@@ -171,7 +171,7 @@ Memento and claude.md
 
 :::: {.columns}
 ::: {.column width="40%"}
-![](../images/popculture/memento-poster.jpg){width=100%}
+![](images/popculture/memento-poster.jpg){width=100%}
 :::
 
 ::: {.column width="60%"}

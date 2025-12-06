@@ -1,4 +1,4 @@
-# Quarto rendered output
+# Quarto rendered output (but allow docs/ for GitHub Pages)
 slides/presentation.html
 slides/presentation_files/
 
