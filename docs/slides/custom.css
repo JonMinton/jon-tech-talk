@@ -1,0 +1,17 @@
+/* Custom styles for TechTalks Edinburgh presentation */
+
+/* Add padding above footer to prevent overlap */
+.reveal .slides section {
+  padding-bottom: 60px;
+}
+
+/* Ensure footer doesn't overlap content */
+.reveal .footer {
+  font-size: 0.6em;
+  padding: 10px;
+}
+
+/* Reduce spacing for scrollable slides to accommodate footer */
+.reveal .slides section.scrollable {
+  padding-bottom: 80px;
+}

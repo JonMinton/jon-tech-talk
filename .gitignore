@@ -1,6 +1,18 @@
-# Quarto rendered output (but allow docs/ for GitHub Pages)
+# Quarto rendered output (local)
 slides/presentation.html
 slides/presentation_files/
 
+# Symlink for quarto preview
+slides/images
+
 # OS files
 .DS_Store
+
+# Quarto cache
+/.quarto/
+
+# Claude Code local settings (personal permissions)
+.claude/settings.local.json
+
+# Failed download attempts
+images/popculture/severance-poster-en.jpg

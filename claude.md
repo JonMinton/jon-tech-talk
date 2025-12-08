@@ -1,11 +1,31 @@
 # Claude Context: TechTalks Edinburgh Presentation
 
+## Memory Architecture
+
+This project uses a **hierarchical memory system** for Claude Code:
+
+```
+CLAUDE.md              ← High-level context (this file)
+                         Project purpose, structure, key decisions
+                         Read automatically at session start
+
+.claude/               ← Specific memory files (optional)
+  ├── settings.local.json   ← Local Claude Code settings
+  └── *.md                   ← Topic-specific memories (if needed)
+                              e.g., style-guide.md, api-notes.md
+```
+
+**Why this matters:**
+- `CLAUDE.md` = Leonard's tattoos (critical, always visible)
+- `.claude/*.md` = Leonard's polaroids (specific, referenced when relevant)
+- Each new Claude session is a fresh clone - these files are its only continuity
+
 ## Project Purpose
+
 Creating a Quarto reveal.js presentation for **TechTalks Edinburgh #4** on December 10, 2024.
 
 **Talk Title:** "Teaching (Yourself and Others) with Claude: Experiments and Reflections"
 **Speaker:** Jon Minton
-**Date:** December 10, 2025
 **Time:** 7:30-8:15 PM
 **Venue:** Clockwise Edinburgh Leith
 **Event:** https://www.meetup.com/techtalks-edinburgh/events/312266554/
@@ -14,26 +34,19 @@ Creating a Quarto reveal.js presentation for **TechTalks Edinburgh #4** on Decem
 
 ```
 jon-tech-talk/
+├── CLAUDE.md                 # High-level project memory (this file)
+├── .claude/                  # Claude-specific config and memories
+│   └── settings.local.json
 ├── slides/
-│   └── presentation.qmd       # Main Quarto reveal.js presentation (MODULAR)
+│   └── presentation.qmd      # Main Quarto reveal.js presentation
 ├── images/
-│   ├── blog/                  # Assets from wired-cloth-mother blog post
-│   │   ├── harlow-experiment.jpg
-│   │   ├── harlow-cloth-mother.jpg (small/corrupted - not used)
-│   │   ├── harlow-surrogate-mothers.jpg (small/corrupted - not used)
-│   │   ├── images_large_fg1.jpeg
-│   │   ├── demis-hassabis.jpg
-│   │   ├── sam-altman.jpg
-│   │   └── hype-and-capability.png
-│   └── popculture/            # Pop culture reference images
-│       ├── severance-poster.jpg (small - may need replacement)
-│       ├── memento-poster.jpg
-│       └── moon-poster.jpg (NEW - 250K)
-├── notes/                     # Supporting materials
-│   ├── consciousness-discussion.md        # Synthesized insights
-│   └── consciousness-conversation-interleaved.md  # Full transcript with thinking steps
-├── claude.md                  # This file - project context
-└── background.md              # Original project brief
+│   ├── blog/                 # Assets from wired-cloth-mother blog post
+│   ├── popculture/           # Movie poster images
+│   └── qrcodes/              # Generated QR codes for slides
+├── notes/                    # Supporting materials
+│   ├── consciousness-discussion.md
+│   └── consciousness-conversation-interleaved.md
+└── background.md             # Original project brief
 ```
 
 ## Presentation Structure (MODULAR with Audience Choice!)
@@ -115,41 +128,35 @@ jon-tech-talk/
 
 ## Technical Setup
 
-### Defensive Rendering (IMPORTANT!)
-
-**Before rendering Quarto presentations**, run the pre-render hook to ensure image paths work:
-
-```bash
-# From repo root
-./.claude/hooks/pre-quarto-render.sh
-```
-
-This defensive script:
-- Checks that `images/` exists at repo root
-- Creates symlink `slides/images -> ../images` if needed
-- Prevents "image not found" errors across branches
-
-### Render Commands
-
+**Local preview:**
 ```bash
 cd slides
-quarto render presentation.qmd
-# or
-quarto preview presentation.qmd  # for live preview
+quarto preview presentation.qmd
 ```
 
-### Why This Is Needed
+**Deploy to GitHub Pages:**
+```bash
+# From repo root - renders to docs/ with all assets
+quarto render slides/presentation.qmd
 
-**Problem:** Quarto presentations in `slides/presentation.qmd` reference images as `images/blog/file.jpg` (relative path). This works IF `slides/images/` exists, but fails if only `images/` exists at repo root.
+# Then commit docs/ and push to main
+git add docs/ _quarto.yml
+git commit -m "Update presentation for GitHub Pages"
+git checkout main
+git merge feature/claude.md
+git push
+```
 
-**Solution:** Use symlink so `slides/images -> ../images` always points to source truth.
+**How it works:**
+- `_quarto.yml` sets `output-dir: docs`
+- Quarto copies all images and assets to `docs/slides/`
+- `docs/index.html` redirects to `slides/presentation.html`
+- GitHub Pages serves from `docs/` on main branch
 
-**Cross-project pattern:** This issue occurs in ANY Quarto project with:
-- Source files in subdirectory (e.g., `slides/`)
-- Assets in separate directory (e.g., `images/`)
-- Relative paths in markdown (e.g., `![](images/foo.jpg)`)
-
-**Defensive hook location:** `.claude/hooks/pre-quarto-render.sh` (executable)
+**Key files for deployment:**
+- `_quarto.yml` - Project config (output-dir: docs)
+- `docs/index.html` - Redirect to presentation
+- `docs/slides/` - Rendered presentation + assets
 
 ## Known Issues / Lessons Learned
 
@@ -168,14 +175,7 @@ quarto preview presentation.qmd  # for live preview
 4. ~~Some downloaded images corrupted~~ - **FIXED**
    - Severance poster replaced with proper 915K version
 
-5. **Quarto image paths** - CRITICAL recurring issue across projects
-   - **Problem:** `slides/presentation.qmd` uses `images/blog/file.jpg` but images are at repo root
-   - **Symptom:** "image not found" errors when rendering, especially after branch switches
-   - **Solution:** Run `./.claude/hooks/pre-quarto-render.sh` before rendering
-   - **Defensive:** Hook creates symlink `slides/images -> ../images` automatically
-   - **Pattern:** Applies to ANY Quarto project with nested source files and external assets
-
-6. ~~Date discrepancy~~ - **FIXED** - Event is December 10, 2025 (corrected in presentation.qmd)
+5. Date discrepancy: Meetup shows "2025" but event is clearly next week (Dec 2024)
 
 ## Current Status
 
