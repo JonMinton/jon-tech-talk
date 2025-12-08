@@ -128,13 +128,35 @@ jon-tech-talk/
 
 ## Technical Setup
 
-To render the presentation:
+**Local preview:**
 ```bash
 cd slides
-quarto render presentation.qmd
-# or
-quarto preview presentation.qmd  # for live preview
+quarto preview presentation.qmd
 ```
+
+**Deploy to GitHub Pages:**
+```bash
+# From repo root - renders to docs/ with all assets
+quarto render slides/presentation.qmd
+
+# Then commit docs/ and push to main
+git add docs/ _quarto.yml
+git commit -m "Update presentation for GitHub Pages"
+git checkout main
+git merge feature/claude.md
+git push
+```
+
+**How it works:**
+- `_quarto.yml` sets `output-dir: docs`
+- Quarto copies all images and assets to `docs/slides/`
+- `docs/index.html` redirects to `slides/presentation.html`
+- GitHub Pages serves from `docs/` on main branch
+
+**Key files for deployment:**
+- `_quarto.yml` - Project config (output-dir: docs)
+- `docs/index.html` - Redirect to presentation
+- `docs/slides/` - Rendered presentation + assets
 
 ## Known Issues / Lessons Learned
 

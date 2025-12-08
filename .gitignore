@@ -1,6 +1,15 @@
-# Quarto rendered output
+# Quarto rendered output (local)
 slides/presentation.html
 slides/presentation_files/
 
+# Symlink for quarto preview
+slides/images
+
 # OS files
 .DS_Store
+
+# Quarto cache
+/.quarto/
+
+# Failed download attempts
+images/popculture/severance-poster-en.jpg
