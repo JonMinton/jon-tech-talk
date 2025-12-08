@@ -11,5 +11,8 @@ slides/images
 # Quarto cache
 /.quarto/
 
+# Claude Code local settings (personal permissions)
+.claude/settings.local.json
+
 # Failed download attempts
 images/popculture/severance-poster-en.jpg
