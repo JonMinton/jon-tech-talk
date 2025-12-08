@@ -17,7 +17,7 @@ https://github.com/JonMinton/jon-blog
 
 There are assets and ideas I'd like to use to explain how Claude Code works from pop culture. These include:
 
-The TV series Severence
+The TV series Severance
 
 The film Her (Less so)
 
