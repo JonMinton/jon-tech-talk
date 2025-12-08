@@ -1,6 +1,27 @@
 # Claude Context: TechTalks Edinburgh Presentation
 
+## Memory Architecture
+
+This project uses a **hierarchical memory system** for Claude Code:
+
+```
+CLAUDE.md              ← High-level context (this file)
+                         Project purpose, structure, key decisions
+                         Read automatically at session start
+
+.claude/               ← Specific memory files (optional)
+  ├── settings.local.json   ← Local Claude Code settings
+  └── *.md                   ← Topic-specific memories (if needed)
+                              e.g., style-guide.md, api-notes.md
+```
+
+**Why this matters:**
+- `CLAUDE.md` = Leonard's tattoos (critical, always visible)
+- `.claude/*.md` = Leonard's polaroids (specific, referenced when relevant)
+- Each new Claude session is a fresh clone - these files are its only continuity
+
 ## Project Purpose
+
 Creating a Quarto reveal.js presentation for **TechTalks Edinburgh #4** on December 10, 2024.
 
 **Talk Title:** "Teaching (Yourself and Others) with Claude: Experiments and Reflections"
@@ -13,26 +34,19 @@ Creating a Quarto reveal.js presentation for **TechTalks Edinburgh #4** on Decem
 
 ```
 jon-tech-talk/
+├── CLAUDE.md                 # High-level project memory (this file)
+├── .claude/                  # Claude-specific config and memories
+│   └── settings.local.json
 ├── slides/
-│   └── presentation.qmd       # Main Quarto reveal.js presentation (MODULAR)
+│   └── presentation.qmd      # Main Quarto reveal.js presentation
 ├── images/
-│   ├── blog/                  # Assets from wired-cloth-mother blog post
-│   │   ├── harlow-experiment.jpg
-│   │   ├── harlow-cloth-mother.jpg (small/corrupted - not used)
-│   │   ├── harlow-surrogate-mothers.jpg (small/corrupted - not used)
-│   │   ├── images_large_fg1.jpeg
-│   │   ├── demis-hassabis.jpg
-│   │   ├── sam-altman.jpg
-│   │   └── hype-and-capability.png
-│   └── popculture/            # Pop culture reference images
-│       ├── severance-poster.jpg (small - may need replacement)
-│       ├── memento-poster.jpg
-│       └── moon-poster.jpg (NEW - 250K)
-├── notes/                     # Supporting materials
-│   ├── consciousness-discussion.md        # Synthesized insights
-│   └── consciousness-conversation-interleaved.md  # Full transcript with thinking steps
-├── claude.md                  # This file - project context
-└── background.md              # Original project brief
+│   ├── blog/                 # Assets from wired-cloth-mother blog post
+│   ├── popculture/           # Movie poster images
+│   └── qrcodes/              # Generated QR codes for slides
+├── notes/                    # Supporting materials
+│   ├── consciousness-discussion.md
+│   └── consciousness-conversation-interleaved.md
+└── background.md             # Original project brief
 ```
 
 ## Presentation Structure (MODULAR with Audience Choice!)

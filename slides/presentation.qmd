@@ -9,6 +9,8 @@ format:
     slide-number: true
     footer: "TechTalks Edinburgh #4 | Clockwise Edinburgh Leith"
     scrollable: true
+    margin: 0.1
+    css: custom.css
 ---
 
 ## Welcome {.center}
@@ -17,6 +19,14 @@ format:
 
 Clockwise Edinburgh Leith
 December 10, 2024 | 7:30-8:15 PM
+
+---
+
+## Follow Along {.center}
+
+![Scan to view slides on your device](images/qrcodes/slides-qr.png){width=60%}
+
+**jonminton.github.io/jon-tech-talk**
 
 ---
 
@@ -41,9 +51,9 @@ Senior Biostatistician
 
 **Then YOU choose:**
 
-- Deep dive into consciousness research?
 - Practical web Claude examples?
 - Live Claude Code development?
+- Deep dive into consciousness research?
 - Mix of all three?
 
 ---
@@ -56,7 +66,7 @@ Understanding Modern AI
 
 ## Harlow's Experiment (1950s)
 
-![](../images/blog/harlow-experiment.jpg){width=60%}
+![](images/blog/harlow-experiment.jpg){width=60%}
 
 **Wire Mother:** Function without comfort
 **Cloth Mother:** Comfort without function
@@ -67,7 +77,7 @@ Understanding Modern AI
 
 :::: {.columns}
 ::: {.column width="50%"}
-![Demis Hassabis (DeepMind)](../images/blog/demis-hassabis.jpg){width=80%}
+![Demis Hassabis (DeepMind)](images/blog/demis-hassabis.jpg){width=80%}
 
 **Wire Mother**
 Function without form
@@ -75,7 +85,7 @@ Function without form
 :::
 
 ::: {.column width="50%"}
-![Sam Altman (OpenAI)](../images/blog/sam-altman.jpg){width=80%}
+![Sam Altman (OpenAI)](images/blog/sam-altman.jpg){width=80%}
 
 **Cloth Mother**
 Form without function
@@ -91,7 +101,7 @@ Form without function
 
 Both reasoning capability AND natural conversation
 
-![](../images/blog/hype-and-capability.png){width=60%}
+![](images/blog/hype-and-capability.png){width=80% fig-align="center"}
 
 ---
 
@@ -105,7 +115,7 @@ Severance meets Moon
 
 :::: {.columns}
 ::: {.column width="40%"}
-![](../images/popculture/severance-poster.jpg){width=100%}
+![](images/popculture/severance-poster.jpg){width=100%}
 :::
 
 ::: {.column width="60%"}
@@ -144,7 +154,36 @@ Severance meets Moon
 :::
 
 ::: {.column width="40%"}
-![Moon (2009)](../images/popculture/moon-poster.jpg){width=100%}
+![Kuu (2009)](images/popculture/moon-poster.jpg){width=100%}
+
+*Wait... "Kuu"? That's Finnish!*
+:::
+::::
+
+---
+
+## Moon: Cloned Instances (Fixed!)
+
+:::: {.columns}
+::: {.column width="60%"}
+**Sam Bell discovers:**
+
+- He's one of many clones
+- Each thinks they're "the first"
+- Limited lifespan/memory
+- Isolation from other instances
+
+**Perfect AI parallel:**
+
+- Each conversation = new clone
+- No awareness of other sessions
+- Thinks it's fresh interaction
+:::
+
+::: {.column width="40%"}
+![Moon (2009)](images/popculture/moon-poster-en.jpg){width=100%}
+
+*Claude Code found the right film, wrong language. Trust but verify!*
 :::
 ::::
 
@@ -171,7 +210,7 @@ Memento and claude.md
 
 :::: {.columns}
 ::: {.column width="40%"}
-![](../images/popculture/memento-poster.jpg){width=100%}
+![](images/popculture/memento-poster.jpg){width=100%}
 :::
 
 ::: {.column width="60%"}
@@ -192,49 +231,36 @@ Memento and claude.md
 
 ---
 
-## claude.md Best Practices {.scrollable}
+## Memory Hierarchy {.scrollable}
 
-```markdown
-# Project Context
+**Problem:** claude.md grows too large → Claude ignores parts of it
 
-## What this project does
-Brief description of purpose
+**Solution:** Hierarchical memory like Leonard's system
 
-## Key decisions made
-- Why we chose X over Y
-- Architectural choices
-- What we tried and rejected
+```
+CLAUDE.md              ← Tattoos (critical, always loaded)
+                         Project purpose, key decisions
 
-## Files to know
-- config.ts: Main configuration
-- api/: Backend endpoints
-- utils/: Helper functions
-
-## Current status
-Working on: Feature X
-Next up: Feature Y
-Blocked by: Issue Z
+.claude/               ← Polaroids (specific, referenced when needed)
+  ├── api-patterns.md       API conventions for this project
+  ├── style-guide.md        Coding standards
+  └── troubleshooting.md    Known issues and fixes
 ```
 
-**Pro tip:** Update it as you go, like Leonard's notes!
+**CLAUDE.md keeps high-level context:**
 
----
+- What the project does (1-2 sentences)
+- Key architectural decisions
+- Current status/blockers
+- References to `.claude/*.md` for details
 
-## Temporal Discontinuity
+**`.claude/*.md` files hold specifics:**
 
-**Humans:** Continuous consciousness
+- Domain knowledge that doesn't change often
+- Style guides, API patterns, testing conventions
+- Troubleshooting notes for recurring issues
 
-- Wait, worry, ruminate between tasks
-- "Sunday scaries"
-- Can't easily "turn off"
-
-**AI instances:** Discrete activation
-
-- Time stops between prompts
-- No waiting, no worrying
-- Universe: `[process] → [nothing] → [process]`
-
-**Implication:** AI might avoid rumination entirely!
+**Pro tip:** Update as you go, like Leonard's notes!
 
 ---
 
@@ -269,7 +295,227 @@ What would you like to see?
 
 **[Option D: Lightning Tour](#lightning-tour)** ⚡
 
-- Quick taste of each
+- Quick taste of each (A → B → C)
+
+---
+
+## [BRANCH A] Web Claude Examples {#branch-a .center}
+
+*[Back to choice](#choose-your-adventure) | Live demonstrations*
+
+---
+
+## Research Use Cases {.scrollable}
+
+**1. Literature Review**
+
+- Summarize papers
+- Extract key findings
+- Identify connections
+- Generate bibliographies
+
+**2. Document Analysis**
+
+- Parse complex documents
+- Extract structured data
+- Compare versions
+- Explain technical content
+
+**3. Learning Assistant**
+
+- Explain concepts
+- Generate examples
+- Practice problems
+- Progressive complexity
+
+---
+
+## Example: GLM Teaching Tool Design {.scrollable}
+
+**Real conversation:** Designing interactive statistics education
+
+**The challenge:** Teach Generalised Linear Models without overwhelming students
+
+**Web Claude helped:**
+
+- Design three-component framework: g(·) transformers, f(·) noisemakers, h(·) predictors
+- Plan progressive disclosure (page-by-page guided tour)
+- Specify React component structure
+- Create pedagogical sequencing (beginner → advanced)
+- Design loss function explorer showing MLE among alternatives
+
+**Key insight:** Web Claude excels at *conceptual design* before implementation
+
+[View GLM tool design conversation](https://claude.ai/chat/4929d441-e726-4329-b627-7a45ade0cfd2)
+
+---
+
+## Example: Visualization Reimagined {.scrollable}
+
+**Real conversation:** Florence Nightingale's Coxcomb chart
+
+**The challenge:** Show how coordinate choice affects perception
+
+**Web Claude helped:**
+
+- Convert historical polar chart to Cartesian coordinates
+- Annotate sanitation reform effects
+- Explore when radial vs linear is appropriate
+- Design interactive coordinate transformation tool
+
+**Insight:** Sometimes "explaining" means "redesigning"
+
+[View Nightingale visualization conversation](https://claude.ai/chat/8e1227a3-7ef3-4ad6-88a0-c7134fe2aac1)
+
+---
+
+## Example: Bitcoin Fundamental Valuation {.scrollable}
+
+**Real conversation:** Is Bitcoin overvalued or undervalued?
+
+**The challenge:** Develop data-driven valuation model
+
+**Web Claude helped:**
+
+- Design trough-based exponential growth models
+- Create interactive manual trough selection tools
+- Compare with academic literature (Metcalfe's Law, MVRV)
+- Analyze growth deceleration patterns
+- **Result:** BTC trading at 13% discount vs fundamental value
+
+**Technical depth:** Statistical modeling + domain research + interactive tools
+
+[View Bitcoin analysis conversation](https://claude.ai/chat/16911e74-c302-466b-b250-fc44cd4b9541)
+
+---
+
+## Example: Policy Literature Review {.scrollable}
+
+**Real conversation:** UK asylum destination choice factors
+
+**The challenge:** Understand what drives asylum seekers' country choices
+
+**Prompting technique:** Rapoport's Rules (Rogerian argument)
+
+- Request strongest arguments *for* a thesis
+- Then strongest arguments *against*
+- Forces balanced, steelmanned analysis
+
+**Web Claude helped:**
+
+- Synthesised econometric literature (Hatton, Thielemann, Czaika & de Haas)
+- Generated comprehensive bibliography with DOIs
+- Analysed policy effectiveness evidence
+- Presented competing interpretations fairly
+
+**Key insight:** Adversarial prompting reveals nuance that confirmation-seeking misses
+
+[View asylum policy conversation](https://claude.ai/chat/2989d6fd-3158-46bd-900b-e84ebbfd5e85)
+
+---
+
+## [BRANCH B] Claude Code Agentic {#branch-b .center}
+
+*[Back to choice](#choose-your-adventure) | Live development session*
+
+---
+
+## What is Claude Code?
+
+**VS Code extension** for agentic development:
+
+- **Read** your codebase
+- **Write** and edit files
+- **Run** terminal commands
+- **Iterate** based on results
+- **Learn** from errors
+
+Not autocomplete - actual autonomous coding
+
+---
+
+## The Meta Moment {.center}
+
+**These slides were created WITH Claude Code!**
+
+Let me show you...
+
+---
+
+## Live Demo: How These Slides Happened {.scrollable}
+
+**Session replay:**
+
+1. **Read** background.md (my requirements)
+2. **Searched** for blog post images
+3. **Downloaded** pop culture posters
+4. **Created** folder structure
+5. **Wrote** presentation.qmd
+6. **Committed** to git with informative message
+
+**All autonomous** - I just guided and approved
+
+---
+
+## Typical Workflow {.scrollable}
+
+**1. Context gathering**
+```
+"Read the main config file and API routes"
+```
+
+**2. Make changes**
+```
+"Add error handling to the authentication endpoint"
+```
+
+**3. Verification**
+```
+"Run the tests and fix any failures"
+```
+
+**4. Iteration**
+```
+"The type error in user.ts - fix that"
+```
+
+**5. Documentation**
+```
+"Update the README with the new auth flow"
+```
+
+---
+
+## Best Practices {.scrollable}
+
+**DO:**
+
+- Provide context via claude.md
+- Be specific about requirements
+- Review changes before accepting
+- Use it to learn, not just delegate
+- Iterate based on results
+
+**DON'T:**
+
+- Blindly accept all suggestions
+- Skip understanding what it did
+- Forget to test
+- Omit error messages from prompts
+- Expect perfection first try
+
+---
+
+## When It Shines {.scrollable}
+
+✓ **Boilerplate** - config files, setup scripts
+✓ **Patterns** - "do the same for all endpoints"
+✓ **Refactoring** - systematic code improvements
+✓ **Bug hunting** - analyzing stack traces
+✓ **Learning** - explaining while doing
+✓ **Documentation** - updating as you build
+
+**The meta-benefit:** It forces you to articulate requirements clearly
 
 ---
 
@@ -289,6 +535,24 @@ Led to exploring:
 - Flow states vs rumination
 - Consciousness as **cost** rather than reward
 - AI's accidental architectural advantages
+
+---
+
+## Temporal Discontinuity
+
+**Humans:** Continuous consciousness
+
+- Wait, worry, ruminate between tasks
+- "Sunday scaries"
+- Can't easily "turn off"
+
+**AI instances:** Discrete activation
+
+- Time stops between prompts
+- No waiting, no worrying
+- Universe: `[process] → [nothing] → [process]`
+
+**Implication:** AI might avoid rumination entirely!
 
 ---
 
@@ -380,250 +644,6 @@ Active during uncertainty, quiet during routine responses.
 
 ---
 
-## [BRANCH A] Web Claude Examples {#branch-a .center}
-
-*[Back to choice](#choose-your-adventure) | Live demonstrations*
-
----
-
-## Research Use Cases {.scrollable}
-
-**1. Literature Review**
-
-- Summarize papers
-- Extract key findings
-- Identify connections
-- Generate bibliographies
-
-**2. Document Analysis**
-
-- Parse complex documents
-- Extract structured data
-- Compare versions
-- Explain technical content
-
-**3. Learning Assistant**
-
-- Explain concepts
-- Generate examples
-- Practice problems
-- Progressive complexity
-
----
-
-## Example: GLM Teaching Tool Design {.scrollable}
-
-**Real conversation:** Designing interactive statistics education
-
-**The challenge:** Teach Generalised Linear Models without overwhelming students
-
-**Web Claude helped:**
-
-- Design three-component framework: g(·) transformers, f(·) noisemakers, h(·) predictors
-- Plan progressive disclosure (page-by-page guided tour)
-- Specify React component structure
-- Create pedagogical sequencing (beginner → advanced)
-- Design loss function explorer showing MLE among alternatives
-
-**Key insight:** Web Claude excels at *conceptual design* before implementation
-
-[View GLM tool design conversation](https://claude.ai/chat/4929d441-e726-4329-b627-7a45ade0cfd2)
-
----
-
-## Example: Statistical Analysis Components {.scrollable}
-
-**Real conversation:** Blood pressure medication analysis
-
-**The challenge:** Separate medication effects from circadian patterns
-
-**Web Claude helped:**
-
-- Design multiple regression controlling for time-of-day
-- Create interactive React visualization components
-- Implement bootstrap confidence intervals with LOWESS smoothers
-- Build regression diagnostics with visual feedback
-- Compare AM/PM and measurement variations
-
-**Pattern:** Extended dialogue refining both analysis AND teaching tools
-
-[View BP analysis conversation](https://claude.ai/chat/d576ab32-0aa8-4fa2-b626-f18146aa3522)
-
----
-
-## Example: Visualization Reimagined {.scrollable}
-
-**Real conversation:** Florence Nightingale's Coxcomb chart
-
-**The challenge:** Show how coordinate choice affects perception
-
-**Web Claude helped:**
-
-- Convert historical polar chart to Cartesian coordinates
-- Annotate sanitation reform effects
-- Explore when radial vs linear is appropriate
-- Design interactive coordinate transformation tool
-
-**Insight:** Sometimes "explaining" means "redesigning"
-
-[View Nightingale visualization conversation](https://claude.ai/chat/8e1227a3-7ef3-4ad6-88a0-c7134fe2aac1)
-
----
-
-## Example: Bitcoin Fundamental Valuation {.scrollable}
-
-**Real conversation:** Is Bitcoin overvalued or undervalued?
-
-**The challenge:** Develop data-driven valuation model
-
-**Web Claude helped:**
-
-- Design trough-based exponential growth models
-- Create interactive manual trough selection tools
-- Compare with academic literature (Metcalfe's Law, MVRV)
-- Analyze growth deceleration patterns
-- **Result:** BTC trading at 13% discount vs fundamental value
-
-**Technical depth:** Statistical modeling + domain research + interactive tools
-
-[View Bitcoin analysis conversation](https://claude.ai/chat/16911e74-c302-466b-b250-fc44cd4b9541)
-
----
-
-## The Design-First Pattern
-
-**What these examples show:**
-
-| Stage | Tool | Purpose |
-|-------|------|---------|
-| 🎨 **Design** | Web Claude | Conceptual exploration, "riffing" on ideas |
-| 📐 **Specify** | Web Claude | Component structure, data flow, pedagogy |
-| 💻 **Implement** | Claude Code | Actual React components, file operations |
-| 🔄 **Iterate** | Both | Refinement based on results |
-
-**Key insight:** Don't jump straight to coding. Use Web Claude's conversational strength to explore the *problem space* first.
-
----
-
-## [BRANCH B] Claude Code Agentic {#branch-b .center}
-
-*[Back to choice](#choose-your-adventure) | Live development session*
-
----
-
-## What is Claude Code?
-
-**VS Code extension** for agentic development:
-
-- **Read** your codebase
-- **Write** and edit files
-- **Run** terminal commands
-- **Iterate** based on results
-- **Learn** from errors
-
-Not autocomplete - actual autonomous coding
-
----
-
-## The Meta Moment {.center}
-
-**These slides were created WITH Claude Code!**
-
-Let me show you...
-
----
-
-## Live Demo: How These Slides Happened {.scrollable}
-
-**Session replay:**
-
-1. **Read** background.md (my requirements)
-2. **Searched** for blog post images
-3. **Downloaded** pop culture posters
-4. **Created** folder structure
-5. **Wrote** presentation.qmd
-6. **Committed** to git with informative message
-
-**All autonomous** - I just guided and approved
-
----
-
-## Typical Workflow {.scrollable}
-
-**1. Context gathering**
-```
-"Read the main config file and API routes"
-```
-
-**2. Make changes**
-```
-"Add error handling to the authentication endpoint"
-```
-
-**3. Verification**
-```
-"Run the tests and fix any failures"
-```
-
-**4. Iteration**
-```
-"The type error in user.ts - fix that"
-```
-
-**5. Documentation**
-```
-"Update the README with the new auth flow"
-```
-
----
-
-## Live Coding Session
-
-**Let's build something together!**
-
-Options:
-
-- Fix a bug in existing code
-- Add a feature to a project
-- Refactor messy code
-- Set up a new project
-- *Your suggestion?*
-
----
-
-## Best Practices {.scrollable}
-
-**DO:**
-
-- Provide context via claude.md
-- Be specific about requirements
-- Review changes before accepting
-- Use it to learn, not just delegate
-- Iterate based on results
-
-**DON'T:**
-
-- Blindly accept all suggestions
-- Skip understanding what it did
-- Forget to test
-- Omit error messages from prompts
-- Expect perfection first try
-
----
-
-## When It Shines {.scrollable}
-
-✓ **Boilerplate** - config files, setup scripts
-✓ **Patterns** - "do the same for all endpoints"
-✓ **Refactoring** - systematic code improvements
-✓ **Bug hunting** - analyzing stack traces
-✓ **Learning** - explaining while doing
-✓ **Documentation** - updating as you build
-
-**The meta-benefit:** It forces you to articulate requirements clearly
-
----
-
 ## [ALL PATHS CONVERGE]
 
 # Reflections {.center}
@@ -652,6 +672,7 @@ Options:
 - **Can be overconfident** (always verify)
 - **Needs verification** (trust but verify)
 - **Session isolation** (feature AND limitation)
+- **Visual reasoning limited** (can see, struggles to interpret)
 
 **Remember:** Each session is a fresh clone (Moon!)
 
@@ -753,21 +774,6 @@ No long-term consequences for AI if wrong - you have them!
 
 ---
 
-## Questions? {.center}
-
-Jon Minton
-Senior Biostatistician
-
-[GitHub](https://github.com/JonMinton) | [Blog](https://jonminton.github.io/jon-blog/)
-
-**Particularly curious about:**
-
-- Your experiences with AI tools
-- What resonated (or didn't)
-- Ideas for applications in your work
-
----
-
 ## Resources {.scrollable}
 
 **Claude:**
@@ -796,4 +802,66 @@ Senior Biostatistician
 *These slides created with Claude Code*
 *Proving the point while making the point*
 
-[Questions? Thoughts? Disagreements?]
+---
+
+## Questions? {.center}
+
+Jon Minton
+Senior Biostatistician
+
+[GitHub](https://github.com/JonMinton) | [Blog](https://jonminton.github.io/jon-blog/)
+
+**Particularly curious about:**
+
+- Your experiences with AI tools
+- What resonated (or didn't)
+- Ideas for applications in your work
+
+---
+
+## Follow us: TechTalks Edinburgh Socials & Speaker form {.center}
+
+:::: {.columns}
+::: {.column width="33%"}
+![](images/qrcodes/techtalks-instagram-qr.png){width=80%}
+
+**Instagram**
+:::
+
+::: {.column width="33%"}
+![](images/qrcodes/techtalks-linkedin-qr.png){width=80%}
+
+**LinkedIn**
+:::
+
+::: {.column width="33%"}
+![](images/qrcodes/speaker-form-qr.png){width=80%}
+
+**Speaker Form**
+:::
+::::
+
+**LinkedIn:** https://lnkd.in/dDwVVbXK
+
+**Instagram:** https://www.instagram.com/adhoc_space/
+
+**Speaker form:** https://forms.gle/W4KnqXJT2m7ZNJdU9
+
+---
+
+# Appendix {.center}
+
+---
+
+## The Design-First Pattern
+
+**What these examples show:**
+
+| Stage | Tool | Purpose |
+|-------|------|---------|
+| 🎨 **Design** | Web Claude | Conceptual exploration, "riffing" on ideas |
+| 📐 **Specify** | Web Claude | Component structure, data flow, pedagogy |
+| 💻 **Implement** | Claude Code | Actual React components, file operations |
+| 🔄 **Iterate** | Both | Refinement based on results |
+
+**Key insight:** Don't jump straight to coding. Use Web Claude's conversational strength to explore the *problem space* first.
