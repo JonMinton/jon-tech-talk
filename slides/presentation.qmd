@@ -851,15 +851,18 @@ Senior Biostatistician
 
 ## Contact: Business Card {.center}
 
-:::: {.columns}
-::: {.column width="50%"}
-![Front](images/cards/professional_front.png){width=100%}
-:::
+<div class="card-container" onclick="this.classList.toggle('flipped')">
+<div class="card-flipper">
+<div class="card-front">
+<img src="images/cards/professional_front.png" alt="Business card front">
+</div>
+<div class="card-back">
+<img src="images/cards/professional_back.png" alt="Business card back">
+</div>
+</div>
+</div>
 
-::: {.column width="50%"}
-![Back](images/cards/professional_back.png){width=100%}
-:::
-::::
+<p class="card-hint">Hover or tap to flip</p>
 
 *Designed with Web Claude, printed by Vistaprint*
 
