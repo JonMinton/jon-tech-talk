@@ -22,7 +22,7 @@ CLAUDE.md              ← High-level context (this file)
 
 ## Project Purpose
 
-Creating a Quarto reveal.js presentation for **TechTalks Edinburgh #4** on December 10, 2024.
+Creating a Quarto reveal.js presentation for **TechTalks Edinburgh #4** on December 10, 2025.
 
 **Talk Title:** "Teaching (Yourself and Others) with Claude: Experiments and Reflections"
 **Speaker:** Jon Minton
@@ -175,7 +175,7 @@ git push
 4. ~~Some downloaded images corrupted~~ - **FIXED**
    - Severance poster replaced with proper 915K version
 
-5. Date discrepancy: Meetup shows "2025" but event is clearly next week (Dec 2024)
+5. ~~Date discrepancy~~ - **RESOLVED**: Event was December 10, 2025
 
 ## Current Status
 
@@ -230,7 +230,7 @@ Jon can read the room and adapt!
 
 ## Notes for Future Claude Sessions
 
-- This is a time-sensitive project (talk is Dec 10, 2024)
+- Talk was delivered Dec 10, 2025 - now iterating post-presentation
 - Jon prefers frequent discussion and iteration
 - The meta aspect is important: use the slide creation process as an example in the talk itself
 - Tone should be reflective and practical, not overly promotional

@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(curl:*)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nFix year: 2024 → 2025\n\nCorrected erroneous 2024 dates to 2025 in:\n- slides/presentation.qmd (YAML date and welcome slide)\n- claude.md (project purpose, known issues, notes)\n- notes/consciousness-discussion.md (date reference)\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n)\")"
     ],
     "deny": [],
     "ask": []
