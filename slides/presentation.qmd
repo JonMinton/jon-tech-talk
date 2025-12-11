@@ -849,6 +849,22 @@ Senior Biostatistician
 
 ---
 
+## Contact: Business Card {.center}
+
+:::: {.columns}
+::: {.column width="50%"}
+![Front](images/cards/professional_front.png){width=100%}
+:::
+
+::: {.column width="50%"}
+![Back](images/cards/professional_back.png){width=100%}
+:::
+::::
+
+*Designed with Web Claude, printed by Vistaprint*
+
+---
+
 # Appendix {.center}
 
 ---
